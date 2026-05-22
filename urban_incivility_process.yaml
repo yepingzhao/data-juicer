@@ -1,0 +1,28 @@
+project_name: 'urban-incivility-process'
+dataset_path: './data/tiny/tiny.jsonl'
+np: 4
+export_path: './outputs/urban-incivility/processed.jsonl'
+
+text_keys: 'text'
+image_key: 'images'
+
+process:
+  # 文本长度过滤
+  - text_length_filter:
+      min_len: 3
+      max_len: 200
+
+  # 中文语言过滤
+  - language_id_score_filter:
+      lang: 'zh'
+      min_score: 0.8
+
+  # 图像尺寸过滤
+  - image_size_filter:
+      min_width: 100
+      min_height: 100
+
+  # 图像宽高比过滤
+  - image_aspect_ratio_filter:
+      min_ratio: 0.3
+      max_ratio: 3.0
