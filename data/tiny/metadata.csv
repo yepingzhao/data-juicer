@@ -1,0 +1,6 @@
+﻿sample_id,image_path,point_type,inspection_standard,problem_description
+ccmb_000019,images/ccmb_000019.jpg,交通场站周边,公共环境,城乡候车大厅门前树穴旁边有烟头
+ccmb_000660,images/ccmb_000660.jpg,医院周边,公共环境,预防接种中心南侧停车场地面垃圾
+ccmb_000939,images/ccmb_000939.jpg,街道办事处,基础设施,门前减速带破损
+ccmb_004172,images/ccmb_004172.jpg,医院,公共环境,门口地面烟盒
+ccmb_013025,images/ccmb_013025.jpg,新时代文明实践中心,基础设施,文明实践站未成年活动室器材摆放杂乱

@@ -1,0 +1,21 @@
+{
+  "dataset_name": "tiny",
+  "description": "从 candidate_records.csv 按 pt_type 分层抽样构建的 5 条小样本数据集",
+  "source": "outputs/s1_preprocess/",
+  "random_state": 42,
+  "total_records": 5,
+  "unique_point_types": 5,
+  "images_copied": 5,
+  "images_missing": 0,
+  "point_type_distribution": {
+    "交通场站周边": 1,
+    "医院周边": 1,
+    "街道办事处": 1,
+    "医院": 1,
+    "新时代文明实践中心": 1
+  },
+  "inspection_standard_distribution": {
+    "公共环境": 3,
+    "基础设施": 2
+  }
+}
