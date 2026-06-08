@@ -241,4 +241,5 @@ override-dependencies = [
     "opencv-python; sys_platform == 'never'",
     "opencv-python-headless; sys_platform == 'never'",
     "opencv-contrib-python-headless; sys_platform == 'never'", # never install other versions of opencv-python
+    "kaleido==0.2.1.post1; sys_platform == 'never'", # kaleido has no x86_64 linux wheel
 ]

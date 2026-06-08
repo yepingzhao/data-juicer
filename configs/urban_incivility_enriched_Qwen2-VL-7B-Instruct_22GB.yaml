@@ -1,6 +1,6 @@
 project_name: 'urban-incivility-enriched'
 dataset_path: './data/tiny/tiny_enriched_prompt.jsonl'
-np: 1
+np: 2
 export_path: './outputs/urban-incivility/enriched.jsonl'
 
 text_keys: 'text'
@@ -8,7 +8,8 @@ image_key: 'images'
 
 process:
   - mllm_mapper:
-      hf_model: 'Qwen/Qwen2-VL-2B-Instruct'
+      hf_model: 'Qwen/Qwen2-VL-7B-Instruct'
       max_new_tokens: 256
       temperature: 0.3
-      accelerator: 'cpu'
+      accelerator: 'cuda'
+      memory: '22GB'
